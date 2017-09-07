@@ -5,7 +5,7 @@ code_point_threshold = 0x00FF
 current_char_code_point = (code_point_threshold - 0x0080) + 0x0022  # = 161
 
 rule_content = "{ "
-while current_char_code_point < 0x00FF:
+while current_char_code_point < code_point_threshold:
     current_char = chr(current_char_code_point)
     rule_content += ("\"" + current_char + "\"")
     rule_content += " | "
