@@ -20,4 +20,4 @@ rule_name = "punctuation"
 rule = rule_name + " = " + rule_content
 
 with open('markdown.pest', 'a', encoding='utf-8') as pest_file:
-    pest_file.write('{0}'.format(rule))
+    pest_file.write('{0}\n'.format(rule))
